@@ -1,0 +1,256 @@
+description: null
+archived: false
+collection_position: null
+source_card_id: null
+table_id:
+- test-data (postgres)
+- public
+- reviews
+result_metadata:
+- database_type: int4
+  semantic_type: type/PK
+  table_id:
+  - test-data (postgres)
+  - public
+  - reviews
+  qp/implicit-field?: true
+  lib/deduplicated-name: id
+  lib/original-name: id
+  name: id
+  lib/source: source/table-defaults
+  lib/source-column-alias: id
+  lib/original-display-name: ID
+  source: fields
+  field_ref:
+  - field
+  - - test-data (postgres)
+    - public
+    - reviews
+    - id
+  - null
+  effective_type: type/Integer
+  active: true
+  id:
+  - test-data (postgres)
+  - public
+  - reviews
+  - id
+  lib/desired-column-alias: id
+  position: 0
+  visibility_type: normal
+  display_name: ID
+  base_type: type/Integer
+- database_type: int4
+  semantic_type: type/FK
+  table_id:
+  - test-data (postgres)
+  - public
+  - reviews
+  qp/implicit-field?: true
+  lib/deduplicated-name: product_id
+  lib/original-name: product_id
+  name: product_id
+  lib/source: source/table-defaults
+  lib/source-column-alias: product_id
+  lib/original-display-name: Product ID
+  source: fields
+  fk_target_field_id:
+  - test-data (postgres)
+  - public
+  - products
+  - id
+  field_ref:
+  - field
+  - - test-data (postgres)
+    - public
+    - reviews
+    - product_id
+  - null
+  effective_type: type/Integer
+  active: true
+  id:
+  - test-data (postgres)
+  - public
+  - reviews
+  - product_id
+  lib/desired-column-alias: product_id
+  position: 1
+  visibility_type: normal
+  display_name: Product ID
+  base_type: type/Integer
+- database_type: text
+  table_id:
+  - test-data (postgres)
+  - public
+  - reviews
+  qp/implicit-field?: true
+  lib/deduplicated-name: reviewer
+  lib/original-name: reviewer
+  name: reviewer
+  lib/source: source/table-defaults
+  lib/source-column-alias: reviewer
+  lib/original-display-name: Reviewer
+  source: fields
+  field_ref:
+  - field
+  - - test-data (postgres)
+    - public
+    - reviews
+    - reviewer
+  - null
+  effective_type: type/Text
+  active: true
+  id:
+  - test-data (postgres)
+  - public
+  - reviews
+  - reviewer
+  lib/desired-column-alias: reviewer
+  position: 2
+  visibility_type: normal
+  display_name: Reviewer
+  base_type: type/Text
+- database_type: int4
+  semantic_type: type/Score
+  table_id:
+  - test-data (postgres)
+  - public
+  - reviews
+  qp/implicit-field?: true
+  lib/deduplicated-name: rating
+  lib/original-name: rating
+  name: rating
+  lib/source: source/table-defaults
+  lib/source-column-alias: rating
+  lib/original-display-name: Rating
+  source: fields
+  field_ref:
+  - field
+  - - test-data (postgres)
+    - public
+    - reviews
+    - rating
+  - null
+  effective_type: type/Integer
+  active: true
+  id:
+  - test-data (postgres)
+  - public
+  - reviews
+  - rating
+  lib/desired-column-alias: rating
+  position: 3
+  visibility_type: normal
+  display_name: Rating
+  base_type: type/Integer
+- database_type: text
+  table_id:
+  - test-data (postgres)
+  - public
+  - reviews
+  qp/implicit-field?: true
+  lib/deduplicated-name: body
+  lib/original-name: body
+  name: body
+  lib/source: source/table-defaults
+  lib/source-column-alias: body
+  lib/original-display-name: Body
+  source: fields
+  field_ref:
+  - field
+  - - test-data (postgres)
+    - public
+    - reviews
+    - body
+  - null
+  effective_type: type/Text
+  active: true
+  id:
+  - test-data (postgres)
+  - public
+  - reviews
+  - body
+  lib/desired-column-alias: body
+  position: 4
+  visibility_type: normal
+  display_name: Body
+  base_type: type/Text
+- database_type: timestamptz
+  semantic_type: type/CreationTimestamp
+  table_id:
+  - test-data (postgres)
+  - public
+  - reviews
+  qp/implicit-field?: true
+  lib/deduplicated-name: created_at
+  lib/original-name: created_at
+  name: created_at
+  lib/source: source/table-defaults
+  lib/source-column-alias: created_at
+  lib/original-display-name: Created At
+  source: fields
+  field_ref:
+  - field
+  - - test-data (postgres)
+    - public
+    - reviews
+    - created_at
+  - null
+  effective_type: type/DateTimeWithLocalTZ
+  active: true
+  id:
+  - test-data (postgres)
+  - public
+  - reviews
+  - created_at
+  lib/desired-column-alias: created_at
+  position: 5
+  visibility_type: normal
+  display_name: Created At
+  base_type: type/DateTimeWithLocalTZ
+card_schema: 22
+database_id: test-data (postgres)
+enable_embedding: false
+collection_id: KbxXpbosIGc_WmrNBpoE-
+query_type: query
+name: perfect reviews
+document_id: null
+type: question
+creator_id: riley@metabase.com
+made_public_by_id: null
+embedding_params: null
+dataset_query:
+  database: test-data (postgres)
+  type: query
+  query:
+    source-table:
+    - test-data (postgres)
+    - public
+    - reviews
+    filter:
+    - =
+    - - field
+      - - test-data (postgres)
+        - public
+        - reviews
+        - rating
+      - base-type: type/Integer
+    - 5
+parameter_mappings: []
+serdes/meta:
+- model: Card
+  id: Npx3TqGdoORUSxDOu9vyf
+  label: perfect_reviews
+display: table
+archived_directly: false
+entity_id: Npx3TqGdoORUSxDOu9vyf
+collection_preview: true
+visualization_settings:
+  table.pivot_column: rating
+  table.cell_column: created_at
+  column_settings: null
+metabase_version: v1.57.1-SNAPSHOT (ade4fb3)
+parameters: []
+dashboard_id: null
+created_at: '2025-11-10T19:26:30.258412Z'
+public_uuid: null
