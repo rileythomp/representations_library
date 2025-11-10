@@ -1,0 +1,306 @@
+description: null
+archived: false
+collection_position: null
+source_card_id: null
+table_id:
+- test-data (postgres)
+- public
+- products
+result_metadata:
+- database_type: int4
+  semantic_type: type/PK
+  table_id:
+  - test-data (postgres)
+  - public
+  - products
+  qp/implicit-field?: true
+  lib/deduplicated-name: id
+  lib/original-name: id
+  name: id
+  lib/source: source/table-defaults
+  lib/source-column-alias: id
+  lib/original-display-name: ID
+  source: fields
+  field_ref:
+  - field
+  - - test-data (postgres)
+    - public
+    - products
+    - id
+  - null
+  effective_type: type/Integer
+  active: true
+  id:
+  - test-data (postgres)
+  - public
+  - products
+  - id
+  lib/desired-column-alias: id
+  position: 0
+  visibility_type: normal
+  display_name: ID
+  base_type: type/Integer
+- database_type: text
+  table_id:
+  - test-data (postgres)
+  - public
+  - products
+  qp/implicit-field?: true
+  lib/deduplicated-name: ean
+  lib/original-name: ean
+  name: ean
+  lib/source: source/table-defaults
+  lib/source-column-alias: ean
+  lib/original-display-name: Ean
+  source: fields
+  field_ref:
+  - field
+  - - test-data (postgres)
+    - public
+    - products
+    - ean
+  - null
+  effective_type: type/Text
+  active: true
+  id:
+  - test-data (postgres)
+  - public
+  - products
+  - ean
+  lib/desired-column-alias: ean
+  position: 1
+  visibility_type: normal
+  display_name: Ean
+  base_type: type/Text
+- database_type: text
+  semantic_type: type/Title
+  table_id:
+  - test-data (postgres)
+  - public
+  - products
+  qp/implicit-field?: true
+  lib/deduplicated-name: title
+  lib/original-name: title
+  name: title
+  lib/source: source/table-defaults
+  lib/source-column-alias: title
+  lib/original-display-name: Title
+  source: fields
+  field_ref:
+  - field
+  - - test-data (postgres)
+    - public
+    - products
+    - title
+  - null
+  effective_type: type/Text
+  active: true
+  id:
+  - test-data (postgres)
+  - public
+  - products
+  - title
+  lib/desired-column-alias: title
+  position: 2
+  visibility_type: normal
+  display_name: Title
+  base_type: type/Text
+- database_type: text
+  semantic_type: type/Category
+  table_id:
+  - test-data (postgres)
+  - public
+  - products
+  qp/implicit-field?: true
+  lib/deduplicated-name: category
+  lib/original-name: category
+  name: category
+  lib/source: source/table-defaults
+  lib/source-column-alias: category
+  lib/original-display-name: Category
+  source: fields
+  field_ref:
+  - field
+  - - test-data (postgres)
+    - public
+    - products
+    - category
+  - null
+  effective_type: type/Text
+  active: true
+  id:
+  - test-data (postgres)
+  - public
+  - products
+  - category
+  lib/desired-column-alias: category
+  position: 3
+  visibility_type: normal
+  display_name: Category
+  base_type: type/Text
+- database_type: text
+  semantic_type: type/Company
+  table_id:
+  - test-data (postgres)
+  - public
+  - products
+  qp/implicit-field?: true
+  lib/deduplicated-name: vendor
+  lib/original-name: vendor
+  name: vendor
+  lib/source: source/table-defaults
+  lib/source-column-alias: vendor
+  lib/original-display-name: Vendor
+  source: fields
+  field_ref:
+  - field
+  - - test-data (postgres)
+    - public
+    - products
+    - vendor
+  - null
+  effective_type: type/Text
+  active: true
+  id:
+  - test-data (postgres)
+  - public
+  - products
+  - vendor
+  lib/desired-column-alias: vendor
+  position: 4
+  visibility_type: normal
+  display_name: Vendor
+  base_type: type/Text
+- database_type: float8
+  table_id:
+  - test-data (postgres)
+  - public
+  - products
+  qp/implicit-field?: true
+  lib/deduplicated-name: price
+  lib/original-name: price
+  name: price
+  lib/source: source/table-defaults
+  lib/source-column-alias: price
+  lib/original-display-name: Price
+  source: fields
+  field_ref:
+  - field
+  - - test-data (postgres)
+    - public
+    - products
+    - price
+  - null
+  effective_type: type/Float
+  active: true
+  id:
+  - test-data (postgres)
+  - public
+  - products
+  - price
+  lib/desired-column-alias: price
+  position: 5
+  visibility_type: normal
+  display_name: Price
+  base_type: type/Float
+- database_type: float8
+  semantic_type: type/Score
+  table_id:
+  - test-data (postgres)
+  - public
+  - products
+  qp/implicit-field?: true
+  lib/deduplicated-name: rating
+  lib/original-name: rating
+  name: rating
+  lib/source: source/table-defaults
+  lib/source-column-alias: rating
+  lib/original-display-name: Rating
+  source: fields
+  field_ref:
+  - field
+  - - test-data (postgres)
+    - public
+    - products
+    - rating
+  - null
+  effective_type: type/Float
+  active: true
+  id:
+  - test-data (postgres)
+  - public
+  - products
+  - rating
+  lib/desired-column-alias: rating
+  position: 6
+  visibility_type: normal
+  display_name: Rating
+  base_type: type/Float
+- database_type: timestamptz
+  semantic_type: type/CreationTimestamp
+  table_id:
+  - test-data (postgres)
+  - public
+  - products
+  qp/implicit-field?: true
+  lib/deduplicated-name: created_at
+  lib/original-name: created_at
+  name: created_at
+  lib/source: source/table-defaults
+  lib/source-column-alias: created_at
+  lib/original-display-name: Created At
+  source: fields
+  field_ref:
+  - field
+  - - test-data (postgres)
+    - public
+    - products
+    - created_at
+  - null
+  effective_type: type/DateTimeWithLocalTZ
+  active: true
+  id:
+  - test-data (postgres)
+  - public
+  - products
+  - created_at
+  lib/desired-column-alias: created_at
+  position: 7
+  visibility_type: normal
+  display_name: Created At
+  base_type: type/DateTimeWithLocalTZ
+card_schema: 22
+database_id: test-data (postgres)
+enable_embedding: false
+collection_id: KbxXpbosIGc_WmrNBpoE-
+query_type: query
+name: Products
+document_id: null
+type: question
+creator_id: riley@metabase.com
+made_public_by_id: null
+embedding_params: null
+dataset_query:
+  database: test-data (postgres)
+  type: query
+  query:
+    source-table:
+    - test-data (postgres)
+    - public
+    - products
+parameter_mappings: []
+serdes/meta:
+- model: Card
+  id: AEFB8yCgmECwoWZrMHpM4
+  label: products
+display: table
+archived_directly: false
+entity_id: AEFB8yCgmECwoWZrMHpM4
+collection_preview: true
+visualization_settings:
+  column_settings: null
+metabase_version: v1.57.1-SNAPSHOT (ade4fb3)
+parameters: []
+dashboard_id: null
+created_at: '2025-11-10T19:23:12.053486Z'
+public_uuid: null
