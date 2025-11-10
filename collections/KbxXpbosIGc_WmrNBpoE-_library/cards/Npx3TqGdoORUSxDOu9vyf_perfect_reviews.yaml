@@ -213,7 +213,7 @@ database_id: test-data (postgres)
 enable_embedding: false
 collection_id: KbxXpbosIGc_WmrNBpoE-
 query_type: query
-name: perfect reviews
+name: perfect reviews_renamed
 document_id: null
 type: question
 creator_id: riley@metabase.com
