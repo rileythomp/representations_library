@@ -1,0 +1,315 @@
+name: gadget test question
+description: null
+entity_id: w7d1iKT_vcjzzL59yFcT3
+created_at: '2025-11-10T18:05:47.850505Z'
+creator_id: riley@metabase.com
+display: table
+archived: false
+collection_id: MNjfa_M1PrxVNnucCXgux
+collection_preview: true
+collection_position: null
+query_type: query
+database_id: test-data (postgres)
+table_id:
+- test-data (postgres)
+- public
+- products
+enable_embedding: false
+embedding_params: null
+made_public_by_id: null
+public_uuid: null
+parameters: []
+parameter_mappings: []
+dataset_query:
+  database: test-data (postgres)
+  query:
+    filter:
+    - =
+    - - field
+      - - test-data (postgres)
+        - public
+        - products
+        - category
+      - base-type: type/Text
+    - Gadget
+    source-table:
+    - test-data (postgres)
+    - public
+    - products
+  type: query
+result_metadata:
+- active: true
+  base_type: type/Integer
+  database_type: int4
+  display_name: ID
+  effective_type: type/Integer
+  field_ref:
+  - field
+  - - test-data (postgres)
+    - public
+    - products
+    - id
+  - null
+  id:
+  - test-data (postgres)
+  - public
+  - products
+  - id
+  name: id
+  position: 0
+  semantic_type: type/PK
+  source: fields
+  table_id:
+  - test-data (postgres)
+  - public
+  - products
+  visibility_type: normal
+  lib/deduplicated-name: id
+  lib/desired-column-alias: id
+  lib/original-display-name: ID
+  lib/original-name: id
+  lib/source: source/table-defaults
+  lib/source-column-alias: id
+  qp/implicit-field?: true
+- active: true
+  base_type: type/Text
+  database_type: text
+  display_name: Ean
+  effective_type: type/Text
+  field_ref:
+  - field
+  - - test-data (postgres)
+    - public
+    - products
+    - ean
+  - null
+  id:
+  - test-data (postgres)
+  - public
+  - products
+  - ean
+  name: ean
+  position: 1
+  source: fields
+  table_id:
+  - test-data (postgres)
+  - public
+  - products
+  visibility_type: normal
+  lib/deduplicated-name: ean
+  lib/desired-column-alias: ean
+  lib/original-display-name: Ean
+  lib/original-name: ean
+  lib/source: source/table-defaults
+  lib/source-column-alias: ean
+  qp/implicit-field?: true
+- active: true
+  base_type: type/Text
+  database_type: text
+  display_name: Title
+  effective_type: type/Text
+  field_ref:
+  - field
+  - - test-data (postgres)
+    - public
+    - products
+    - title
+  - null
+  id:
+  - test-data (postgres)
+  - public
+  - products
+  - title
+  name: title
+  position: 2
+  semantic_type: type/Title
+  source: fields
+  table_id:
+  - test-data (postgres)
+  - public
+  - products
+  visibility_type: normal
+  lib/deduplicated-name: title
+  lib/desired-column-alias: title
+  lib/original-display-name: Title
+  lib/original-name: title
+  lib/source: source/table-defaults
+  lib/source-column-alias: title
+  qp/implicit-field?: true
+- active: true
+  base_type: type/Text
+  database_type: text
+  display_name: Category
+  effective_type: type/Text
+  field_ref:
+  - field
+  - - test-data (postgres)
+    - public
+    - products
+    - category
+  - null
+  id:
+  - test-data (postgres)
+  - public
+  - products
+  - category
+  name: category
+  position: 3
+  semantic_type: type/Category
+  source: fields
+  table_id:
+  - test-data (postgres)
+  - public
+  - products
+  visibility_type: normal
+  lib/deduplicated-name: category
+  lib/desired-column-alias: category
+  lib/original-display-name: Category
+  lib/original-name: category
+  lib/source: source/table-defaults
+  lib/source-column-alias: category
+  qp/implicit-field?: true
+- active: true
+  base_type: type/Text
+  database_type: text
+  display_name: Vendor
+  effective_type: type/Text
+  field_ref:
+  - field
+  - - test-data (postgres)
+    - public
+    - products
+    - vendor
+  - null
+  id:
+  - test-data (postgres)
+  - public
+  - products
+  - vendor
+  name: vendor
+  position: 4
+  semantic_type: type/Company
+  source: fields
+  table_id:
+  - test-data (postgres)
+  - public
+  - products
+  visibility_type: normal
+  lib/deduplicated-name: vendor
+  lib/desired-column-alias: vendor
+  lib/original-display-name: Vendor
+  lib/original-name: vendor
+  lib/source: source/table-defaults
+  lib/source-column-alias: vendor
+  qp/implicit-field?: true
+- active: true
+  base_type: type/Float
+  database_type: float8
+  display_name: Price
+  effective_type: type/Float
+  field_ref:
+  - field
+  - - test-data (postgres)
+    - public
+    - products
+    - price
+  - null
+  id:
+  - test-data (postgres)
+  - public
+  - products
+  - price
+  name: price
+  position: 5
+  source: fields
+  table_id:
+  - test-data (postgres)
+  - public
+  - products
+  visibility_type: normal
+  lib/deduplicated-name: price
+  lib/desired-column-alias: price
+  lib/original-display-name: Price
+  lib/original-name: price
+  lib/source: source/table-defaults
+  lib/source-column-alias: price
+  qp/implicit-field?: true
+- active: true
+  base_type: type/Float
+  database_type: float8
+  display_name: Rating
+  effective_type: type/Float
+  field_ref:
+  - field
+  - - test-data (postgres)
+    - public
+    - products
+    - rating
+  - null
+  id:
+  - test-data (postgres)
+  - public
+  - products
+  - rating
+  name: rating
+  position: 6
+  semantic_type: type/Score
+  source: fields
+  table_id:
+  - test-data (postgres)
+  - public
+  - products
+  visibility_type: normal
+  lib/deduplicated-name: rating
+  lib/desired-column-alias: rating
+  lib/original-display-name: Rating
+  lib/original-name: rating
+  lib/source: source/table-defaults
+  lib/source-column-alias: rating
+  qp/implicit-field?: true
+- active: true
+  base_type: type/DateTimeWithLocalTZ
+  database_type: timestamptz
+  display_name: Created At
+  effective_type: type/DateTimeWithLocalTZ
+  field_ref:
+  - field
+  - - test-data (postgres)
+    - public
+    - products
+    - created_at
+  - null
+  id:
+  - test-data (postgres)
+  - public
+  - products
+  - created_at
+  name: created_at
+  position: 7
+  semantic_type: type/CreationTimestamp
+  source: fields
+  table_id:
+  - test-data (postgres)
+  - public
+  - products
+  visibility_type: normal
+  lib/deduplicated-name: created_at
+  lib/desired-column-alias: created_at
+  lib/original-display-name: Created At
+  lib/original-name: created_at
+  lib/source: source/table-defaults
+  lib/source-column-alias: created_at
+  qp/implicit-field?: true
+visualization_settings:
+  column_settings: null
+card_schema: 22
+serdes/meta:
+- id: w7d1iKT_vcjzzL59yFcT3
+  label: gadget_test_question
+  model: Card
+archived_directly: false
+dashboard_id: null
+document_id: null
+metabase_version: v1.57.1-SNAPSHOT (ade4fb3)
+source_card_id: null
+type: question
