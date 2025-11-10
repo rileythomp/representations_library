@@ -7,7 +7,7 @@ table_id:
 - public
 - reviews
 result_metadata:
-- database_type: int4
+- database_type: serial
   semantic_type: type/PK
   table_id:
   - test-data (postgres)
@@ -79,6 +79,7 @@ result_metadata:
   display_name: Product ID
   base_type: type/Integer
 - database_type: text
+  semantic_type: null
   table_id:
   - test-data (postgres)
   - public
@@ -144,6 +145,7 @@ result_metadata:
   display_name: Rating
   base_type: type/Integer
 - database_type: text
+  semantic_type: null
   table_id:
   - test-data (postgres)
   - public
@@ -213,7 +215,7 @@ database_id: test-data (postgres)
 enable_embedding: false
 collection_id: KbxXpbosIGc_WmrNBpoE-
 query_type: query
-name: perfect reviews_renamed
+name: perfect reviews_renamed_again
 document_id: null
 type: question
 creator_id: riley@metabase.com
@@ -240,7 +242,7 @@ parameter_mappings: []
 serdes/meta:
 - model: Card
   id: Npx3TqGdoORUSxDOu9vyf
-  label: perfect_reviews
+  label: perfect_reviews_renamed_again
 display: table
 archived_directly: false
 entity_id: Npx3TqGdoORUSxDOu9vyf
