@@ -215,7 +215,7 @@ database_id: test-data (postgres)
 enable_embedding: false
 collection_id: KbxXpbosIGc_WmrNBpoE-
 query_type: query
-name: perfect reviews_renamed_again
+name: perfect reviews_renamed_again_2
 document_id: null
 type: question
 creator_id: riley@metabase.com
@@ -242,7 +242,7 @@ parameter_mappings: []
 serdes/meta:
 - model: Card
   id: Npx3TqGdoORUSxDOu9vyf
-  label: perfect_reviews_renamed_again
+  label: perfect_reviews_renamed_again_2
 display: table
 archived_directly: false
 entity_id: Npx3TqGdoORUSxDOu9vyf
